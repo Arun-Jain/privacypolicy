@@ -114,7 +114,7 @@ class App extends React.Component {
     formData.append("ads", this.state.form.step3.ads)
     formData.append("marketing", this.state.form.step3.marketing)
 
-    axios.post('http://127.0.0.1:8000/privacy', formData)
+    axios.post('https://arunjain.pythonanywhere.com/privacy', formData)
       .then(response => {
         console.log(response);
         this.setState({
